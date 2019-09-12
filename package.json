@@ -4,7 +4,7 @@
     "demo": "https://mixedreality.mozilla.org/blog",
     "version": "2.1.6",
     "engines": {
-        "ghost": ">=1.2.0"
+        "ghost": ">=2.14.3"
     },
     "license": "MIT",
     "screenshots": {
