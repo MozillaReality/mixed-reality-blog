@@ -28,10 +28,10 @@ into the {body} of the default.hbs template --}}
                 {{/primary_tag}}
                 <h1 class="post-full-title">{{title}}</h1>
                 <section class="post-full-meta">
-                    {{#if author.profile_image}}
-                        <img class="post-meta-author-image" src="{{author.profile_image}}" alt="{{author.name}}" />
+                    {{#if primary_author.profile_image}}
+                        <img class="post-meta-author-image" src="{{primary_author.profile_image}}" alt="{{primary_author.name}}" />
                     {{/if}}
-                    <span class="post-meta-author">{{author}}</span>
+                    <span class="post-meta-author">{{primary_author}}</span>
                     <span>&nbsp;-&nbsp;</span>
                     <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
                 </section>
@@ -51,7 +51,7 @@ into the {body} of the default.hbs template --}}
 
             <footer class="post-full-footer">
                 {{!-- Everything inside the #author tags pulls data from the author --}}
-                {{#author}}
+                {{#primary_author}}
 
                 <section class="author-card">
                     {{#if profile_image}}
@@ -70,7 +70,7 @@ into the {body} of the default.hbs template --}}
                     <a class="author-card-button" href="{{url}}">Read More</a>
                 </div>
 
-                {{/author}}
+                {{/primary_author}}
             </footer>
 
             {{!--
