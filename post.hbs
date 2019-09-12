@@ -31,7 +31,7 @@ into the {body} of the default.hbs template --}}
                     {{#if primary_author.profile_image}}
                         <img class="post-meta-author-image" src="{{primary_author.profile_image}}" alt="{{primary_author.name}}" />
                     {{/if}}
-                    <span class="post-meta-author">{{primary_author}}</span>
+                    <span class="post-meta-author">{{primary_author.name}}</span>
                     <span>&nbsp;-&nbsp;</span>
                     <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
                 </section>
